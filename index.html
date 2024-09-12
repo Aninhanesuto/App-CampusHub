@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusHub - Ceunes</title>
+    
+    <link rel="preload" href="medio.jpg" as="image">
+
+    <!-- Links para as fontes e ícones -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- Header com imagem de destaque -->
+    <header>
+        <div class="hero">
+            <img src="medio.jpg" alt="Campus da UFES" class="hero-image">
+            <div class="hero-content">
+                <h1>CampusHub - Conectando Você ao Campus Ceunes</h1>
+                <p>Integra diversas funcionalidades, como restaurante universitário, biblioteca e muito mais.</p>
+                <div class="buttons">
+                    <a href="#" class="btn google-play">
+                        <i class="fab fa-google-play"></i> Baixar na Google Play
+                    </a>
+                    <a href="#" class="btn app-store">
+                        <i class="fab fa-apple"></i> Baixar na App Store
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção de funcionalidades do app -->
+    <section class="features">
+        <h2>Funcionalidades Principais</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <img src="restaurante.png" alt="Restaurante Universitário">
+                <div class="feature-text">
+                    <h3>Restaurante Universitário</h3>
+                    <p>Acesse o cardápio diário e pague diretamente pelo aplicativo via Pix.</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <img src="biblioteca.png" alt="Biblioteca">
+                <div class="feature-text">
+                    <h3>Biblioteca Completa</h3>
+                    <p>Pesquise livros físicos e digitais, periódicos, revistas e mais. Pague multas e receba alertas de devolução.</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <img src="gps.png" alt="Mapa do Campus">
+                <div class="feature-text">
+                    <h3>Mapa do Campus</h3>
+                    <p>Encontre facilmente salas de aula, laboratórios, bibliotecas e outros locais importantes.</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <img src="calendario.png" alt="Eventos Universitários">
+                <div class="feature-text">
+                    <h3>Notificações de Eventos</h3>
+                    <p>Receba atualizações sobre eventos científicos, culturais e acadêmicos diretamente no app.</p>
+                    <div class="feature-text">
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Depoimentos com carrossel -->
+        <section class="testimonials">
+            <h2>O que dizem os alunos</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial" id="testimonial-1">
+                    <blockquote>"O CampusHub facilitou muito meu dia a dia. Agora faço tudo pelo app!"</blockquote>
+                    <p>- João, Engenharia Química</p>
+                </div>
+    
+                <div class="testimonial" id="testimonial-2">
+                    <blockquote>"Poder reservar livros e pagar multas pelo aplicativo me economiza muito tempo."</blockquote>
+                    <p>- Maria, Farmácia</p>
+                </div>
+    
+                <div class="testimonial" id="testimonial-3">
+                    <blockquote>"O mapa do campus e notificações de eventos me mantém atualizado sobre tudo."</blockquote>
+                    <p>- Pedro, Ciência da Computação</p>
+                </div>
+            </div>
+            <button id="prev" class="carousel-btn">Anterior</button>
+            <button id="next" class="carousel-btn">Próximo</button>
+        </section>
+    
+        <!-- Rodapé -->
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2024 CampusHub UFES - Todos os direitos reservados</p>
+                <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+            </div>
+        </footer>
+    
+        <script src="carousel.js"></script>
+    </body>
+    </html>

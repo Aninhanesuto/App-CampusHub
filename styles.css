@@ -1,0 +1,246 @@
+/* Estilos gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    color: white;
+}
+
+.hero {
+    position: relative;
+    height: 60vh;
+    background-color: #00447C;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.buttons .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+}
+
+.buttons .btn:hover {
+    background-color: #696969;
+    transform: translateY(-2px);
+}
+
+.buttons .btn:focus {
+    outline: 2px solid #696969;
+    outline-offset: 4px;
+    background-color: #5353ec;
+}
+
+.buttons .btn:active {
+    transform: translateY(2px);
+    background-color: #004080;
+}
+
+.buttons .btn i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+.btn.google-play {
+    background-color: #000000;
+}
+
+.btn.google-play:hover {
+    background-color: #333333;
+}
+
+.btn.app-store {
+    background-color: #000000;
+}
+
+.btn.app-store:hover {
+    background-color: #333333;
+}
+
+.features {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.features-grid .feature img {
+    max-width: 100px; /* Flexibiliza o tamanho das imagens */
+    height: auto;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.feature {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+}
+
+.testimonials {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f0f4f8;
+}
+
+.testimonial {
+    display: none;
+}
+
+.testimonial img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 0;
+}
+
+.carousel-btn {
+    padding: 15px 30px;
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Melhoria de responsividade */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .buttons .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .features {
+        padding: 60px 20px; /* Aumenta o espaçamento nas seções */
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 20px; /* Adiciona mais espaço entre os elementos */
+    }
+
+    .testimonial img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .carousel-btn {
+        padding: 8px 16px;
+        margin: 10px; /* Adiciona mais espaço ao redor dos botões */
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .buttons .btn {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+
+    .feature {
+        padding: 25px; /* Adiciona mais espaço dentro das caixas de recursos */
+    }
+
+    .feature img {
+        max-width: 80px; /* Ajusta as imagens para telas menores */
+        margin-bottom: 10px;
+    }
+
+    .testimonial img {
+        width: 100px;
+        height: 100px;
+    }
+
+    blockquote {
+        font-size: 0.9rem;
+    }
+
+    .carousel-btn {
+        padding: 6px 12px;
+        margin: 10px; /* Adiciona mais espaço entre os botões do carrossel */
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
+
+    .features {
+        padding: 60px 15px; /* Aumenta o espaçamento nas seções para telas menores */
+    }
+
+    .features-grid {
+        gap: 25px; /* Adiciona mais espaçamento entre as funcionalidades */
+    }
+}
